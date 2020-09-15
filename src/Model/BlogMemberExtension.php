@@ -46,6 +46,13 @@ class BlogMemberExtension extends DataExtension
     private static $belongs_many_many = [
         'BlogPosts' => BlogPost::class
     ];
+    
+    /**
+     * @var array
+     */
+    private static $owns = [
+        'BlogProfileImage'  
+    ];
 
     /**
      * {@inheritdoc}
